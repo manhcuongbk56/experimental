@@ -1,4 +1,4 @@
-package org.sample;
+package cuong.sample;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

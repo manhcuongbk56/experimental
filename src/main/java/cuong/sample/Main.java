@@ -1,4 +1,4 @@
-package org.sample;
+package cuong.sample;
 
 public class Main {
 

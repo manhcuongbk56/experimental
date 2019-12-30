@@ -29,7 +29,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.sample;
+package cuong.sample;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.RunnerException;
@@ -78,7 +78,7 @@ public class MyBenchmark {
         return sum;
     }
 
-    @Benchmark
+//    @Benchmark
     public int loopForLinkedList(MyState state) {
         int sum = 0;
         var input = state.stringsLinked;
@@ -106,6 +106,7 @@ public class MyBenchmark {
                 i++;
                 sum += s.length();
             }
+            i = 0;
         }
         return sum;
 
@@ -115,10 +116,10 @@ public class MyBenchmark {
     public int loopIterator(MyState state) {
         int sum = 0;
         var input = state.strings;
-        Iterator<String> iterator = input.iterator();
         var loopOfLoop = state.loopOfLoop;
         for (int i = 0; i < loopOfLoop; i++) {
             sum = 0;
+            Iterator<String> iterator = input.iterator();
             while (iterator.hasNext()) {
                 String next = iterator.next();
                 sum += next.length();
@@ -152,7 +153,7 @@ public class MyBenchmark {
 
     private static String[] createArray() {
         int size = 500;
-        String sArray[] = new String[size];
+        String[] sArray = new String[size];
         for (int i = 0; i < size; i++) {
             sArray[i] = "t " + i;
         }
