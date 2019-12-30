@@ -1,0 +1,6 @@
+JMH S 22 org.sample.MyBenchmark S 51 org.sample.generated.MyBenchmark_loopStream_jmhTest S 10 loopStream S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 22 org.sample.MyBenchmark S 56 org.sample.generated.MyBenchmark_loopStreamByMap_jmhTest S 15 loopStreamByMap S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 22 org.sample.MyBenchmark S 48 org.sample.generated.MyBenchmark_loopFor_jmhTest S 7 loopFor S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 22 org.sample.MyBenchmark S 58 org.sample.generated.MyBenchmark_loopForLinkedList_jmhTest S 17 loopForLinkedList S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 22 org.sample.MyBenchmark S 50 org.sample.generated.MyBenchmark_loopWhile_jmhTest S 9 loopWhile S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 22 org.sample.MyBenchmark S 53 org.sample.generated.MyBenchmark_loopIterator_jmhTest S 12 loopIterator S 11 AverageTime E A 1 1 1 E I 1 5 T 4 1 ms E I 1 5 T 4 1 ms E E E E E E E E U 11 NANOSECONDS E E 
