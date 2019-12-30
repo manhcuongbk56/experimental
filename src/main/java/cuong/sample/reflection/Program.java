@@ -1,4 +1,4 @@
-package cuong.sample;
+package cuong.sample.reflection;
 
 public class Program
 {

@@ -29,7 +29,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package cuong.sample;
+package cuong.sample.jmh;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.RunnerException;
@@ -50,12 +50,9 @@ import java.util.concurrent.TimeUnit;
 public class MyBenchmark {
 
 
-    int x;
-
     public static void main(String[] args) throws IOException, RunnerException {
         org.openjdk.jmh.Main.main(args);
     }
-
 
     @State(Scope.Thread)
     public static class MyState {
@@ -78,7 +75,7 @@ public class MyBenchmark {
         return sum;
     }
 
-//    @Benchmark
+    @Benchmark
     public int loopForLinkedList(MyState state) {
         int sum = 0;
         var input = state.stringsLinked;
