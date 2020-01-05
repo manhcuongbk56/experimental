@@ -46,7 +46,7 @@ import java.util.concurrent.TimeUnit;
 //@Fork(value = 1, jvmArgsPrepend = {"-XX:-UseBiasedLocking"})
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
-@OutputTimeUnit(TimeUnit.NANOSECONDS)
+@OutputTimeUnit(TimeUnit.MILLISECONDS)
 public class MyBenchmark {
 
 
@@ -75,7 +75,7 @@ public class MyBenchmark {
         return sum;
     }
 
-    @Benchmark
+//    @Benchmark
     public int loopForLinkedList(MyState state) {
         int sum = 0;
         var input = state.stringsLinked;
